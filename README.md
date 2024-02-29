@@ -48,13 +48,17 @@ SELECT neighborhood,count(neighborhood) FROM restaurantS GROUP BY neighborhood
 ```
 CREATE TABLE users (id INTEGER PRIMARY KEY,username TEXT,email TEXT,password TEXT)
 ```
+## Importing users.csv into users table;
+```
+.import data/users4.csv
+```
 ## Creating a POSTS table;
 ```
 CREATE TABLE posts (id INTEGER PRIMARY KEY, status TEXT, sent_by TEXT, sent_to TEXT, post_type TEXT, content TEXT, time_posted TEXT);
 ```
 ## Importing posts.csv into posts table;
 ```
-.import data/posts.csv posts
+.import data/posts2.csv posts
 ```
 ### Q1: Register a new User
 ```
